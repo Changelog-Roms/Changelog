@@ -1,0 +1,167 @@
+Changelog DerpFest 14 - Diting 4/07/2024
+
+Device:
+
+-Rebased Device Tree
+-Add Dolby Atmos
+-Add Dolby Vision (Test)
+-Reback MiCharge
+
+Kernel:
+-Update GKI to 5.10.210-android12-9-03209
+-Update kernel-headers from KERNEL.PLATFORM.1.0.r1-17100-kernel.0
+
+====================
+    07-05-2024     
+====================
+
+* vendor/derp
+1d3b354  overlay: Enable the app battery usage list page feature  [LuK1337]
+
+
+* vendor/qcom/opensource/commonsys/fm
+99846b5  Revert "FMApp2: Bring in the new icon"  [NurKeinNeid]
+
+
+====================
+    07-04-2024     
+====================
+
+* bootable/recovery
+a35ac2b  updater: Support loading dynamic partition metadata from OTA  [Yumi Yukimura]
+
+
+* build/make
+a30e979  Merge tag 'android-14.0.0_r53' of https://android.googlesource.com/platform/build into 14  [NurKeinNeid]
+5a6256c  releasetools: Pass non-sparse super_empty.img to update_dynamic_partitions()  [Yumi Yukimura]
+6aeea58  releasetools: build_super_image: Do not set readonly attr  [Yumi Yukimura]
+1f22c4a  build: Enable super image build rules depending on single super block device  [Yumi Yukimura]
+
+
+* build/release
+9e8ff7d  Merge tag 'android-14.0.0_r53' of https://android.googlesource.com/platform/build/release into 14  [NurKeinNeid]
+
+
+* frameworks/av
+54bfc2b  Merge tag 'android-14.0.0_r53' of https://android.googlesource.com/platform/frameworks/av into 14  [NurKeinNeid]
+e60dd26  codec2: a workaround to solve backward compatibility issue  [Jiajia Cong]
+
+
+* frameworks/base
+118a658  Intent firewall enhancement  [nift4]
+86c6afe  SystemUI: Fix Internet Tile showing no service  [Tommy Webb]
+2bb8438  Fix default values for 5G Ultra Wideband icon carrier config keys  [Vala Zadeh]
+1bde470  Add 5G Ultra Wideband icon carrier config keys  [Vala Zadeh]
+44bbaaf  PixelPropsUtils: Update from husky july release  [NurKeinNeid]
+c9ec58b  Merge tag 'android-14.0.0_r53' of https://android.googlesource.com/platform/frameworks/base into 14  [NurKeinNeid]
+
+
+* hardware/interfaces
+5868a2d  Merge tag 'android-14.0.0_r53' of https://android.googlesource.com/platform/hardware/interfaces into 14  [NurKeinNeid]
+
+
+* hardware/qcom-caf/sdm845/display
+19a1164  gralloc: Allow devices to opt-in for YCrCb camera video encode  [Ivan Vecera]
+2ff1fba  gralloc: Select CPU readable YCbCr format  [Mathew Joseph Karimpanal]
+
+
+* manifest
+74503f9  pixel: July 2024 Security update  [Chirayu Desai]
+46e1059  manifest: Add aosp-akita remote  [Michael Bestas]
+13f16f6  Merge tag 'android-14.0.0_r53' of https://android.googlesource.com/platform/manifest into 14  [NurKeinNeid]
+
+
+* packages/apps/DerpLauncher
+615e14f  DerpLauncher: Bump version to AP2A.240705.005  [NurKeinNeid]
+
+
+* packages/apps/Flash
+362114e  Automatic translation import  [LineageOS Infra]
+
+
+* packages/apps/FlipFlap
+3b20ffc  Automatic translation import  [LineageOS Infra]
+
+
+* packages/apps/Settings
+861add6  Merge tag 'android-14.0.0_r53' of https://android.googlesource.com/platform/packages/apps/Settings into 14  [NurKeinNeid]
+
+
+* packages/modules/common
+bf3780f  Merge tag 'android-14.0.0_r53' of https://android.googlesource.com/platform/packages/modules/common into 14  [NurKeinNeid]
+
+
+* packages/providers/MediaProvider
+1d94b68  Merge tag 'android-14.0.0_r53' of https://android.googlesource.com/platform/packages/providers/MediaProvider into 14  [NurKeinNeid]
+
+
+* packages/resources/devicesettings
+cb71c22  Automatic translation import  [LineageOS Infra]
+
+
+* system/core
+599d7ba  init: devices: Add option to accept any device as boot device  [Yumi Yukimura]
+e5f609c  fixup! liblp: Allow to flash on bigger block device  [me-cafebabe]
+
+
+* system/media
+0022368  Merge tag 'android-14.0.0_r53' of https://android.googlesource.com/platform/system/media into 14  [NurKeinNeid]
+
+
+====================
+    07-03-2024     
+====================
+
+* hardware/google/graphics/common
+a4c7d42  Merge tag 'android-14.0.0_r53' into staging/lineage-21.0_merge-android-14.0.0_r53  [Michael Bestas]
+
+
+* manifest
+b01c28a  Manifest for Android 14.0.0 Release 53  [The Android Open Source Project]
+9cb5b5e  Manifest for Android 14.0.0 Release 52  [The Android Open Source Project]
+
+
+====================
+    07-02-2024     
+====================
+
+====================
+    07-01-2024     
+====================
+
+* bionic
+7c91e99  Ensure prop has zero padding  [canyie]
+da61d46  Prevent serial of ro props from self increment  [LoveSy]
+
+
+* frameworks/base
+e588cfa  Fix crash with protected content with ElectronBeam/Scale screen-off animation  [Matt Filetto]
+873140e  fwb: Screen off animations [1/2]  [Kshitij Gupta]
+7092225  Revert "base: Allow disabling refresh rate lowering in battery saver"  [NurKeinNeid]
+0819d0c  LensScreenshotReceiver: Return when failed to start activity  [someone5678]
+8e74261  RuntimeInit: Prevent bootloop trying to handle app crash of null service  [Pranav Vashi]
+4baff54  SystemUI: Disable FaceUnlock Lockouts  [minaripenguin]
+
+
+* packages/apps/DerpSpace
+9eb9809  Revert "Revert "DerpSpace: Screen off animations [2/2]""  [NurKeinNeid]
+
+
+* packages/apps/Settings
+95d03e5  Revert "Settings: Add toggle for 60Hz refresh rate on battery saver"  [NurKeinNeid]
+
+
+* packages/modules/Connectivity
+01b5254  Merge tag 'android-14.0.0_r50' of https://android.googlesource.com/platform/packages/modules/Connectivity into 14  [NurKeinNeid]
+
+
+* prebuilts/derp
+939743d  Update prebuilt libraries  [Dhina17]
+
+
+* vendor/gms
+de0c14b  gms: Update Flipendo  [NurKeinNeid]
+ca0b96a  gms: Update PixelSetupWizard  [NurKeinNeid]
+ae855b0  gms: Update TurboAdapter  [NurKeinNeid]
+
+
